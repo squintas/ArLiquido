@@ -1,8 +1,7 @@
-var _url;
+var _url;  // isto é uma variável global
 
+// esta função carrega os dados que irão alimentar a criação do HTML
 function loadConfigurationData() {
-
-
     $.getJSON(_url + "data.json", function (oData) {
         if (oData) {
             createHtml(oData);
@@ -14,6 +13,8 @@ function loadConfigurationData() {
     });
 }
 
+// obtem a URL de uma imagem de acordo com o seu "tipo"
+// por ex: "cover", etc
 function getImage(arr, sType) {
     if (arr && sType) {
         for (let i = 0; i < arr.length; i++) {
@@ -24,6 +25,8 @@ function getImage(arr, sType) {
     }
 }
 
+// obtem a URL de um video de acordo com o seu "tipo"
+// por ex: "youtube", "vimeo", etc
 function getLink(arr, aStype) {
     if (arr && aStype) {
         for (let i = 0; i < arr.length; i++) {
@@ -37,7 +40,10 @@ function getLink(arr, aStype) {
     }
 }
 
+// cria o HTML para cada entrada no array
 function createHtml(arr) {
+
+    // primeiro temos que apagar algum HTML anteriormente criado
     $("#al-generated-content").html("");
 
     var sHtml = "";
@@ -63,7 +69,10 @@ function createHtml(arr) {
     $("#al-generated-content").html(sHtml);
 }
 
-function setGlobalURL(arr) {
+// é importante fazer o set da variável global _url
+// pois dependendo de onde estivermos a correr isto (localhost ou github)
+// a url será diferente
+function setGlobalURL() {
     _url = "";
     if (window.location.host === "squintas.github.io") {
         _url = window.location.origin + "/ArLiquido/mockupServer/"
@@ -72,6 +81,7 @@ function setGlobalURL(arr) {
     }
 }
 
+// é aqui que começa a festa assim que o "document" estiver "ready"
 $(document).ready(function () {
     setGlobalURL();
     loadConfigurationData();
