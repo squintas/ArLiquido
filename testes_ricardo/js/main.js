@@ -1,10 +1,8 @@
-var _aConfigData;
 
 function loadConfigurationData() {
-    $.getJSON("/../mockupServer/data.json", function (oData) {
+    $.getJSON(window.location.origin + "/mockupServer/data.json", function (oData) {
         if (oData) {
-            _aConfigData = oData;
-            createHtml(_aConfigData);
+            createHtml(oData);
         } else {
             throw "Error Loading data.json";
         }
@@ -40,22 +38,23 @@ function createHtml(arr) {
     $("#al-generated-content").html("");
 
     var sHtml = "";
-
     for (let i = 0; i < arr.length; i++) {
         var oElement = arr[i];
-        var sLink = getLink(oElement.links, ["youtube", "vimeo", "spotify"]);
-        sHtml += "<div class='al-card'>";
-        sHtml += "<p>" + oElement.id + "</p>";
-        sHtml += "<p>" + oElement.title + "</p>";
-        sHtml += "<p>" + oElement.description + "</p>";
-        sHtml += "<p>" + oElement.creationDate + "</p>";
-        if (sLink) {
-            sHtml += "<a href='" + sLink + "'>" + sLink + "</a>";
+        if (oElement.enabled) {
+            var sLink = getLink(oElement.links, ["youtube", "vimeo", "spotify"]);
+            sHtml += "<div class='al-card'>";
+            sHtml += "<p>" + oElement.id + "</p>";
+            sHtml += "<p>" + oElement.title + "</p>";
+            sHtml += "<p>" + oElement.description + "</p>";
+            sHtml += "<p>" + oElement.creationDate + "</p>";
+            if (sLink) {
+                sHtml += "<a href='" + sLink + "'>" + sLink + "</a>";
+            }
+            sHtml += "<p>" + oElement.format + "</p>";
+            sHtml += "<p>" + oElement.enabled + "</p>";
+            sHtml += "<img src='/../mockupServer/images/" + getImage(oElement.images, "cover") + "'</>";
+            sHtml += "</div>";
         }
-        sHtml += "<p>" + oElement.format + "</p>";
-        sHtml += "<p>" + oElement.enabled + "</p>";
-        sHtml += "<img src='/../mockupServer/images/" + getImage(oElement.images, "cover") + "'</>";
-        sHtml += "</div>";
     }
 
     $("#al-generated-content").html(sHtml);
