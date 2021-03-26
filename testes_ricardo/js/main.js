@@ -1,6 +1,13 @@
 
 function loadConfigurationData() {
-    $.getJSON(window.location.origin + "/mockupServer/data.json", function (oData) {
+    var url = "";
+    if (window.location.host === "squintas.github.io") {
+        url = window.location.origin + "/ArLiquido/mockupServer/data.json"
+    } else {
+        url = window.location.origin + "/mockupServer/data.json"
+    }
+
+    $.getJSON(url, function (oData) {
         if (oData) {
             createHtml(oData);
         } else {
