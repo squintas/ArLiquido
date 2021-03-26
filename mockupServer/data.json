@@ -1,0 +1,128 @@
+[
+    {
+        "id": "001",
+        "title": "Step Right Up",
+        "description": "Description1",
+        "creationDate": "20210101",
+        "images": [
+            {
+                "cover": "stepRightUp.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/album/3Q0g6M9eSvABI7uvp9pqUb?si=DV93Nt2mQ6i_kBphV4pT6A"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "002",
+        "title": "A BOX OF DARKNESS WITH A BIRD IN ITS HEART",
+        "description": "(2020) - mov 3 (excerpt) | Vasco Mendonça",
+        "creationDate": "20210102",
+        "images": [
+            {
+                "cover": "chavala_com_violino.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/518964300"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "003",
+        "title": "Kaija Saariaho and Vasco Mendonça",
+        "description": "Rolex Mentor and Protégé in Music, 2014–2015",
+        "creationDate": "20210102",
+        "images": [
+            {
+                "cover": "vasco_com_a_amiga.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://youtu.be/09dSs2BPlo8"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "004",
+        "title": "Valéria",
+        "description": "NOA",
+        "creationDate": "20210102",
+        "images": [
+            {
+                "cover": "comboio.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=jDQWRyN2uIU"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "005",
+        "title": "A Love Supreme",
+        "description": "John Coltrane",
+        "creationDate": "20210102",
+        "images": [
+            {
+                "cover": "coltrane.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=ll3CMgiUPuU"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "006",
+        "title": "Bonga - currumba (exclusive)",
+        "description": "Lindo saudades ! Nasci em Angola mas filha de portugueses ! Continue Bonga . Adoro suas letras energia simpatia e a sua preocupação pelo povo Angolano . Um abraço",
+        "creationDate": "20220102",
+        "images": [
+            {
+                "cover": "bonga.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=7WErGF0z5ws"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "007",
+        "title": "Nuno Costa - 'Detox' 2015 Teaser",
+        "description": "Recorded at Timbuktu Studios Jan. 5th&6th 2014",
+        "creationDate": "20140102",
+        "images": [
+            {
+                "cover": "detox.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=T4E3xCu9XrY"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    }
+]

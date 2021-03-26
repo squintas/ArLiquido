@@ -1,0 +1,10 @@
+.al-splash .al-card {
+  border: 1px solid black;
+  width: 30%;
+  padding: 3rem;
+  margin: 1rem;
+}
+
+.al-splash .al-card img {
+  max-width: 100%;
+}
