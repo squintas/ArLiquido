@@ -1,13 +1,9 @@
+var _url;
 
 function loadConfigurationData() {
-    var url = "";
-    if (window.location.host === "squintas.github.io") {
-        url = window.location.origin + "/ArLiquido/mockupServer/data.json"
-    } else {
-        url = window.location.origin + "/mockupServer/data.json"
-    }
 
-    $.getJSON(url, function (oData) {
+
+    $.getJSON(_url + "data.json", function (oData) {
         if (oData) {
             createHtml(oData);
         } else {
@@ -22,7 +18,7 @@ function getImage(arr, sType) {
     if (arr && sType) {
         for (let i = 0; i < arr.length; i++) {
             if (arr[i][sType]) {
-                return arr[i][sType];
+                return _url + "images/" + arr[i][sType];
             }
         }
     }
@@ -59,7 +55,7 @@ function createHtml(arr) {
             }
             sHtml += "<p>" + oElement.format + "</p>";
             sHtml += "<p>" + oElement.enabled + "</p>";
-            sHtml += "<img src='/../mockupServer/images/" + getImage(oElement.images, "cover") + "'</>";
+            sHtml += "<img src='" + getImage(oElement.images, "cover") + "'</>";
             sHtml += "</div>";
         }
     }
@@ -67,7 +63,16 @@ function createHtml(arr) {
     $("#al-generated-content").html(sHtml);
 }
 
+function setGlobalURL(arr) {
+    _url = "";
+    if (window.location.host === "squintas.github.io") {
+        _url = window.location.origin + "/ArLiquido/mockupServer/"
+    } else {
+        _url = window.location.origin + "/mockupServer/"
+    }
+}
 
 $(document).ready(function () {
+    setGlobalURL();
     loadConfigurationData();
 });
