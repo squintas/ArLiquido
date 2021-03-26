@@ -13,6 +13,25 @@ function loadConfigurationData() {
     });
 }
 
+// esta funcao baralha os valores de um array
+// encontrei-a no stackoverflow aqui https://stackoverflow.com/questions/48659645/jquery-object-shuffle-randomize
+function baralhaOsValoresDesteArray(arr) {
+    var m = arr.length, t, i;
+
+    // While there remain elements to shuffle…
+    while (m) {
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * m--);
+
+        // And swap it with the current element.
+        t = arr[m];
+        arr[m] = arr[i];
+        arr[i] = t;
+    }
+
+    return arr;
+};
+
 // obtem a URL de uma imagem de acordo com o seu "tipo"
 // por ex: "cover", etc
 function getImage(arr, sType) {
@@ -42,7 +61,7 @@ function getLink(arr, aStype) {
 
 // cria o HTML para cada entrada no array
 function createHtml(arr) {
-
+    arr = baralhaOsValoresDesteArray(arr);
     // primeiro temos que apagar algum HTML anteriormente criado
     $("#al-generated-content").html("");
 
