@@ -15,6 +15,25 @@
         padding: 3rem;
         font-family: "Roboto", sans-serif;
       }
+      .container h2,
+      .container p {
+        margin: 0;
+      }
+
+      .container div {
+        padding: 0.5rem;
+        width: 100%;
+      }
+
+      .container div:hover {
+        background-color: #ddd;
+      }
+      .container a {
+        text-decoration: none;
+      }
+      .container p {
+        color: black;
+      }
     </style>
     <title>Ar Liquido</title>
   </head>
@@ -22,11 +41,19 @@
   <body>
     <h1>Links para as várias versões</h1>
 
-    <ul>
-      <li><a href="testes_ricardo/index.html">testes_ricardo</a></li>
-      <li>
-        <a href="testes_salvador/index.html">testes_salvador</a>
-      </li>
-    </ul>
+    <div class="container">
+      <a href="testes_ricardo/index.html">
+        <div>
+          <h2>testes_ricardo</h2>
+          <p>Isto são alguns testes feitos pelo Ricardo</p>
+        </div>
+      </a>
+      <a href="testes_salvador/index.html">
+        <div>
+          <h2>testes_salvador</h2>
+          <p>Isto são alguns testes feitos pelo Salvador</p>
+        </div>
+      </a>
+    </div>
   </body>
 </html>
