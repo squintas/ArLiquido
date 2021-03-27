@@ -3,7 +3,7 @@
         "id": "001",
         "title": "Step Right Up",
         "description": "Description1",
-        "creationDate": "20210101",
+        "creationDate": "2021-01-01",
         "images": [
             {
                 "cover": "stepRightUp.png"
@@ -21,7 +21,7 @@
         "id": "002",
         "title": "A BOX OF DARKNESS WITH A BIRD IN ITS HEART",
         "description": "(2020) - mov 3 (excerpt) | Vasco Mendonça",
-        "creationDate": "20210102",
+        "creationDate": "2021-01-02",
         "images": [
             {
                 "cover": "chavala_com_violino.png"
@@ -39,7 +39,7 @@
         "id": "003",
         "title": "Kaija Saariaho and Vasco Mendonça",
         "description": "Rolex Mentor and Protégé in Music, 2014–2015",
-        "creationDate": "20210102",
+        "creationDate": "2021-01-02",
         "images": [
             {
                 "cover": "vasco_com_a_amiga.png"
@@ -57,7 +57,7 @@
         "id": "004",
         "title": "Valéria",
         "description": "NOA",
-        "creationDate": "20210102",
+        "creationDate": "2021-01-02",
         "images": [
             {
                 "cover": "comboio.png"
@@ -75,7 +75,7 @@
         "id": "005",
         "title": "A Love Supreme",
         "description": "John Coltrane",
-        "creationDate": "20210102",
+        "creationDate": "2021-01-02",
         "images": [
             {
                 "cover": "coltrane.png"
@@ -93,7 +93,7 @@
         "id": "006",
         "title": "Bonga - currumba (exclusive)",
         "description": "Lindo saudades ! Nasci em Angola mas filha de portugueses ! Continue Bonga . Adoro suas letras energia simpatia e a sua preocupação pelo povo Angolano . Um abraço",
-        "creationDate": "20220102",
+        "creationDate": "2022-01-02",
         "images": [
             {
                 "cover": "bonga.png"
@@ -111,7 +111,25 @@
         "id": "007",
         "title": "Nuno Costa - 'Detox' 2015 Teaser",
         "description": "Recorded at Timbuktu Studios Jan. 5th&6th 2014",
-        "creationDate": "20140102",
+        "creationDate": "2014-01-02",
+        "images": [
+            {
+                "cover": "detox.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=T4E3xCu9XrY"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "007",
+        "title": "Nuno Costa - 'Detox' 2015 Teaser",
+        "description": "Recorded at Timbuktu Studios Jan. 5th&6th 2014",
+        "creationDate": "2014-01-02",
         "images": [
             {
                 "cover": "detox.png"

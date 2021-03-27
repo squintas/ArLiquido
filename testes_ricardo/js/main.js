@@ -59,9 +59,22 @@ function getLink(arr, aStype) {
     }
 }
 
+// obtem uma data em formato JS
+// recebe data no formato YYYY-MM-DD
+function getDate(sDate) {
+    var oDate = new Date(sDate);
+    if (oDate instanceof Date && !isNaN(oDate)) {
+        return oDate;
+    } else {
+        return null;
+    }
+}
+
 // cria o HTML para cada entrada no array
 function createHtml(arr) {
+
     arr = baralhaOsValoresDesteArray(arr);
+
     // primeiro temos que apagar algum HTML anteriormente criado
     $("#al-generated-content").html("");
 
@@ -74,7 +87,7 @@ function createHtml(arr) {
             sHtml += "<p>" + oElement.id + "</p>";
             sHtml += "<p>" + oElement.title + "</p>";
             sHtml += "<p>" + oElement.description + "</p>";
-            sHtml += "<p>" + oElement.creationDate + "</p>";
+            sHtml += "<p>" + getDate(oElement.creationDate) + "</p>";
             if (sLink) {
                 sHtml += "<a href='" + sLink + "'>" + sLink + "</a>";
             }
