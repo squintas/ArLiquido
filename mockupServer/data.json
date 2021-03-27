@@ -126,7 +126,7 @@
         "enabled": true
     },
     {
-        "id": "007",
+        "id": "008",
         "title": "Nuno Costa - 'Detox' 2015 Teaser",
         "description": "Recorded at Timbuktu Studios Jan. 5th&6th 2014",
         "creationDate": "2014-01-02",
@@ -141,6 +141,762 @@
             }
         ],
         "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "009",
+        "title": "Kenny G - The Moment (Official Video)",
+        "description": "As featured on The Essential Kenny G. Click to buy the track or album via iTunes: ",
+        "creationDate": "2011-01-02",
+        "images": [
+            {
+                "cover": "kenny.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=447yaU_4DF8"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "010",
+        "title": "Lionel Richie - Hello",
+        "description": "Lionel Richie is a drama professor falling for a blind student and, just when he thinks she’ll never know his feelings, he discovers she “sees” him, too, as she sculpts his likeness in art class.",
+        "creationDate": "2015-04-12",
+        "images": [
+            {
+                "cover": "lionel.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=mHONNcZbwDY"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "011",
+        "title": "Louis Armstrong - What A Wonderful World",
+        "description": "I see trees of green Red roses too I see them bloom For me and for you And I think to myself What a wonderful world",
+        "creationDate": "1971-02-04",
+        "images": [
+            {
+                "cover": "satchmo.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=VqhCQZaH4Vs"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "012",
+        "title": "Tony de Matos Só Nós DoisVersão Original",
+        "description": "Uma das mais conhecidas canções deste cantor, cantada pela primeira vez no filme 'A Canção da Saudade em 1964'",
+        "creationDate": "2019-08-16",
+        "images": [
+            {
+                "cover": "tony.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=m1ZnSP9l84c"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "013",
+        "title": "Tony de Matos - O Destino Marca a Hora [1988]",
+        "description": "Tony de Matos canta um excerto do tema O Destino Marca a Hora, no programa 'Deixem Passar a Música' em 1988, na RTP",
+        "creationDate": "1988-01-20",
+        "images": [
+            {
+                "cover": "tony2.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=hMHCIi150AE"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "014",
+        "title": "Collectif Paris Swing feat. Giacomo Smith // Chinatown my Chinatown // studio session",
+        "description": "Collectif Paris Swing feat. Giacomo Smith (London) Paris mars 2017",
+        "creationDate": "2017-03-01",
+        "images": [
+            {
+                "cover": "giacomo.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=iONXAAYlX-c"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "015",
+        "title": "Adrien Moignard Trio feat. Giacomo Smith - Djangology",
+        "description": "Torino, 1° Giugno 2015, per la rassegna 'Manouche alla Mole' all'interno del Torino Jazz Festival, live di Adrien Moignard in formazione trio nel cortile della Mole Antonelliana, qui sul palco anche il clarinettista inglese Giacomo Smith.",
+        "creationDate": "2015-06-01",
+        "images": [
+            {
+                "cover": "giacomo2.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=4226PxxWHZs"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "016",
+        "title": "Gonzalo Bergara & Adrien Moignard - Django's Tiger [Clasico]",
+        "description": "Clasico album from Adrien Moignard & Gonzalo Bergara available at shows, on www.djangostation.com and on iTunes Music Store.",
+        "creationDate": "2013-05-13",
+        "images": [
+            {
+                "cover": "bergara.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=jtMVoYxX-VE"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "017",
+        "title": "DIVA NATALIA DE ANDRADE LIVE PERFORMANCE AT PASSEIO DOS ALEGRES        ",
+        "description": "Achei a professora da Vânia Mello pessoal!! Deve estar muito orgulhosa de sua pupila!!",
+        "creationDate": "2011-06-02",
+        "images": [
+            {
+                "cover": "natalia.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=jmljsFsHm2I"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "018",
+        "title": "Putin dá resposta épica a Biden",
+        "description": "Após ser chamado de 'assassino' pelo presidente norte-americano Joe Biden, seu homólogo russo Vladimir Putin desejou-lhe saúde ao conceder resposta histórica ao líder dos EUA.",
+        "creationDate": "2021-03-18",
+        "images": [
+            {
+                "cover": "putin.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=LlVHBCg4Jp4"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "019",
+        "title": "meditation",
+        "description": "kimyuna iceshow -meditation",
+        "creationDate": "2012-01-12",
+        "images": [
+            {
+                "cover": "meditation.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/13669227"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "020",
+        "title": "Meditation",
+        "description": "Yes, that's another side affect of meditation as well but the truth and proper meditations gives you lot more than that.",
+        "creationDate": "2019-02-02",
+        "images": [
+            {
+                "cover": "meditation2.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/139312024"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "021",
+        "title": "Mozart’s basset-clarinet concerto - rehearsal excerpts",
+        "description": "Rehearsal excerpts from the Mozart clarinet concerto in A. Performed with an 18th century period clarinet copy manufactured by the soloist specially for the occasion",
+        "creationDate": "2014-06-02",
+        "images": [
+            {
+                "cover": "clarinet.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/17877414"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "022",
+        "title": "Nuno Costa ” (…) ” @ Festival TOAP 2010",
+        "description": "Nuno Costa´s band with B.Moreira, J.Moreira, O.Graça, M.Cavaleiro live.",
+        "creationDate": "2010-02-06",
+        "images": [
+            {
+                "cover": "costa.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/11781492"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "023",
+        "title": "Cut It Out",
+        "description": "Cut It Out is a psychological drama following Tara as she is being guided to defuse a bomb in a school, which leads her into a surrealistic situation she has to escape from",
+        "creationDate": "2021-02-26",
+        "images": [
+            {
+                "cover": "cuitout.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/449181632"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "024",
+        "title": "Global Women - Career Limiting",
+        "description": "What’s the most career limiting thing you can do? It turns out that if you’re a woman, it’s having a baby.",
+        "creationDate": "2013-06-22",
+        "images": [
+            {
+                "cover": "GlobalWomen.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/520991555"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "025",
+        "title": "Composer Vasco Mendonça on the Opera ‘The House Taken Over’",
+        "description": "October thrillers anyone? Composer Vasco Mendonça let us in on why The House Taken Over interested him as a project and why it is more a psychological exploration rather than a horror. Join us for the New York",
+        "creationDate": "2017-01-23",
+        "images": [
+            {
+                "cover": "vasco.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/185054301"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "026",
+        "title": "O Estado da Nação 12 Maio - Vasco Mendonça",
+        "description": "O ESTADO DA NAÇÃO I Remix Ensemble Casa da Música Pedro Neves: direcção musical Leonor Barbosa de Melo: soprano",
+        "creationDate": "2018-07-02",
+        "images": [
+            {
+                "cover": "vasco2.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/127508475"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "027",
+        "title": "Oscar Peterson",
+        "description": "you can see the joy",
+        "creationDate": "2011-01-06",
+        "images": [
+            {
+                "cover": "oscar.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/18609766"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "028",
+        "title": "BBC Oscar Peterson",
+        "description": "Live at Ronnie Scotts 1974",
+        "creationDate": "1974-08-01",
+        "images": [
+            {
+                "cover": "oscar2.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/76226277"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "029",
+        "title": "The Art Tatum Centennial Celebration",
+        "description": "It is no stretch to state that Art Tatum was the jazz world's first, and arguably greatest, virtuoso. His seemingly effortless abilities on the keyboard placed him far above the most accomplished of his contemporaries.",
+        "creationDate": "1955-01-10",
+        "images": [
+            {
+                "cover": "arttatum.png"
+            }
+        ],
+        "links": [
+            {
+                "vimeo": "https://vimeo.com/6755413"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "030",
+        "title": "VICTOR ESPADINHA, RECORDAR E VIVER",
+        "description": "VICTOR ESPADINHA, 'RECORDAR E VIVER' ESTA CANÇÃO E DEDICADA A MINHA ESPOSA 36 ANOS DE CASADOS",
+        "creationDate": "2009-06-11",
+        "images": [
+            {
+                "cover": "espadinha.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "xhttps://www.youtube.com/watch?v=ZoYXkcuBiqcxx"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "031",
+        "title": "INACREDITÁVEL.....ME SEGURA JESUS",
+        "description": "Vou entrar com um processo. Isso é um absurdo, fazer as pessoas, como eu, passarem mal de tanto RIR, deveria dar cadeia. VALEU!!!!!!!!",
+        "creationDate": "2014-02-14",
+        "images": [
+            {
+                "cover": "mesegura.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=IGksEVrlZCE"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "032",
+        "title": "o que faz falta na tv são mais filmes de foda!",
+        "description": "angolano Boavida não joga com o baralho todo",
+        "creationDate": "2010-04-10",
+        "images": [
+            {
+                "cover": "filmesdefoda.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=E3pRqxKR5fY"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "033",
+        "title": "Bomba em Vizela!",
+        "description": "Fernando cuidado com a bomba, compra uma bomba 🤔😏🤣😂😂",
+        "creationDate": "2019-05-02",
+        "images": [
+            {
+                "cover": "sinaldoouvido.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=BqlRwYso_LY"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "034",
+        "title": "Bad Penny Blues",
+        "description": "Humphrey Lyttelton",
+        "creationDate": "2020-03-06",
+        "images": [
+            {
+                "cover": "BadPennyBlues.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/73wMhwPBtNZbaa3WJUZ0Fk?si=2-61T0o7S9Om70Gk8LJ5Wg"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "035",
+        "title": "Dardanella",
+        "description": "Adrian Cox presents profoundly blue",
+        "creationDate": "2018-10-02",
+        "images": [
+            {
+                "cover": "Dardanella.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/3zz2KGB2LVudU4UX9XE8N7?si=0Ri15URNRjuHoKPsUdxW_Q"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "036",
+        "title": "Dark Days",
+        "description": "Yard Act",
+        "creationDate": "2021-03-03",
+        "images": [
+            {
+                "cover": "DarkDays.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/1YptJwVc5cXAH1hul0nzXw?si=DtTWyReLT_ahQK9M41ysJA"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "037",
+        "title": "'Ma' Ranneys Black Bottom",
+        "description": "Booze and Blues",
+        "creationDate": "1939-02-22",
+        "images": [
+            {
+                "cover": "BlackBottom.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/3ftGs8ddu8Y6OiN9ooAPCF?si=8xOeYvajTQevsO7J0ON0pg"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "038",
+        "title": "Caravan",
+        "description": "The Best of Edmond Hall",
+        "creationDate": "2019-06-08",
+        "images": [
+            {
+                "cover": "Caravan.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/6YWFWRelR07CipKBAmnVoh?si=5hk70Y9AQOSGHTP-IaYAQQ"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "039",
+        "title": "Sid Phillips",
+        "description": "Clarinet Cadenza",
+        "creationDate": "2017-05-21",
+        "images": [
+            {
+                "cover": "SidPhillips.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/3c9a14OIbhL0FTmBuFYNPC?si=Wh1teKn8QQSR-ldP9PE-tw"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "040",
+        "title": "Sergei Rachmaninoff",
+        "description": "Vocalise Op.34 No.14",
+        "creationDate": "2021-03-27",
+        "images": [
+            {
+                "cover": "SergeiRachmaninoff.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/4YgDjCrTY5Ju49pDkRr3J3?si=nTV1ZTX8QW6GBkOVUYk8rA"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "041",
+        "title": "Ludwig van Beethoven",
+        "description": "Piano Concerto no.2 in B Flat Major Op.19",
+        "creationDate": "2017-06-21",
+        "images": [
+            {
+                "cover": "LudwigvanBeethoven.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/6xrs6RX3mABeOGdt146Nsi?si=nN4ANdQqTmusuwv4HZ1XPg"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "042",
+        "title": "Wolfgang Amadeus Mozart",
+        "description": "Rondo in C Major K.373",
+        "creationDate": "2012-04-22",
+        "images": [
+            {
+                "cover": "K.373.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/2QtMVPw9dHkSsRegMw1qqL?si=086gtnljR4KANp8ttI498w"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "043",
+        "title": "Ludwig van Beethoven",
+        "description": "Symphony No.8 in F Major",
+        "creationDate": "2016-04-25",
+        "images": [
+            {
+                "cover": "Symphony8.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/25snhaZOxl9eMkwUHc5R4N?si=Ewxy83m7RBePQolt4pwCeg"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "044",
+        "title": "Nadia Labrie",
+        "description": "Andante in C Major K.315",
+        "creationDate": "2011-02-24",
+        "images": [
+            {
+                "cover": "NadiaLabrie.png"
+            }
+        ],
+        "links": [
+            {
+                "spotify": "https://open.spotify.com/track/5XzR42E8b2HjenCiJml9JP?si=V1lmZes3TZ6mHVFrBEujyg"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "045",
+        "title": "Jovem angolano quando passa do BEGINNERS manja no inglês...Lol",
+        "description": "Vontade de falar inglês irmão paga faz um curso, kkk..",
+        "creationDate": "2014-11-06",
+        "images": [
+            {
+                "cover": "Jovemangolano.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=UY4r0ECZ-S8"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "046",
+        "title": "Amália Rodrigues 'Canção Do Mar'",
+        "description": "Toda a imensa tristeza do Fado, toda a grandeza do Fado, toda a alma de Portugal, esse Portugal que vive e viverá na Língua de Luis Vaz de Camões e na voz de Amalia Rodrigues",
+        "creationDate": "2007-12-10",
+        "images": [
+            {
+                "cover": "amalia.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=89JbzIhIwlE"
+            }
+        ],
+        "format": 2,
+        "enabled": true
+    },
+    {
+        "id": "047",
+        "title": "Ed Motta - Caso Sèrio",
+        "description": "Ed Motta singing Caso Sèrio by Rita Lee/ Roberto de Carvalho",
+        "creationDate": "2006-09-22",
+        "images": [
+            {
+                "cover": "EdMotta.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=r3e-pc2PWZ0"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "048",
+        "title": "Ed Motta em DVD - Fora Da Lei",
+        "description": "o cara é bom, mas nao se esqueçam daquela equipe ali atraz que faz parte do show, nao é moleza nao !",
+        "creationDate": "2007-10-03",
+        "images": [
+            {
+                "cover": "ForaDaLei.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=GEDoWT6HVH4"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "049",
+        "title": "Ed Motta: 'Você não pesquisou para fazer uma pergunta melhor?'' | 5 Para a Meia-Noite | RTP",
+        "description": "Ed Motta foi submetido à entrevista mais infame da televisão portuguesa.",
+        "creationDate": "2019-05-17",
+        "images": [
+            {
+                "cover": "edMotta2.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=gWkLZU9WjFM"
+            }
+        ],
+        "format": 3,
+        "enabled": true
+    },
+    {
+        "id": "050",
+        "title": "JOHN COLTRANE Alabama",
+        "description": "Alabama (John Coltrane Quartet (Ralph J Gleason's Jazz Casual, 1963)",
+        "creationDate": "1963-02-04",
+        "images": [
+            {
+                "cover": "coltrane2.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=saN1BwlxJxA"
+            }
+        ],
+        "format": 1,
         "enabled": true
     }
 ]
