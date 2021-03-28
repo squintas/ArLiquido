@@ -1,0 +1,144 @@
+/* .al-splash .al-card {
+    border: 1px solid black;
+    width: 30%;
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.al-splash .al-card img {
+    max-width: 100%;
+} */
+
+
+/* SQ CSS  */
+
+body {
+    background: repeating-linear-gradient(140deg, #5d5d5a 2%, #3f3b3b 2%, #3f3b3b 4%, #5d5d5a 4%, #5d5d5a 6%);
+}
+
+header img {
+    width: 100%;
+}
+
+.container {
+    min-height: 1000px;
+    margin: 50px 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+
+section {
+    display: flex;
+    /* background-color: #aeaeae; */
+    align-items: center;
+    width: 500px;
+    height: auto;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+section .violino-img {
+    max-width: 313px;
+}
+
+.row-1 .card-text-1 {
+    /* align-self: flex-start; */
+    /* text-decoration: none; */
+    /* padding-top: 30px; */
+    /* opacity: .5; */
+    background-color: lightskyblue;
+    margin-left: 215px;
+    margin-top: -5px;
+    width: 275px;
+    height: 216px;
+    position: absolute;
+    padding-left: 10px
+}
+
+.row-1 .card-text-2 {
+    background-color: yellow;
+    width: 174px;
+    height: 216px;
+    position: absolute;
+    margin-left: 314px;
+    margin-top: -3px;
+    padding-left: 10px;
+}
+
+.row-2 .card-text-1 {
+    /* align-self: flex-start; */
+    /* text-decoration: none; */
+    /* padding-top: 30px; */
+    /* opacity: .5; */
+    background-color: lightskyblue;
+    margin-left: 215px;
+    margin-top: -5px;
+    width: 275px;
+    height: 216px;
+    position: absolute;
+    padding-left: 10px
+}
+
+.row-2 .card-text-2 {
+    background-color: yellow;
+    width: 174px;
+    height: 216px;
+    position: absolute;
+    margin-left: 314px;
+    margin-top: -3px;
+    padding-left: 10px;
+}
+
+.row-3 .card-text-1 {
+    /* align-self: flex-start; */
+    /* text-decoration: none; */
+    /* padding-top: 30px; */
+    /* opacity: .5; */
+    background-color: lightskyblue;
+    margin-left: 215px;
+    margin-top: -5px;
+    width: 275px;
+    height: 216px;
+    position: absolute;
+    padding-left: 10px
+}
+
+.row-3 .card-text-2 {
+    background-color: yellow;
+    width: 174px;
+    height: 216px;
+    position: absolute;
+    margin-left: 314px;
+    margin-top: -3px;
+    padding-left: 10px;
+}
+
+
+/* Animações Teste - Elas acontecem independentemente do scroll no browser  */
+
+
+/* @keyframes slideinleft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
