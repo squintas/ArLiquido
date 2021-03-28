@@ -1,8 +1,7 @@
-var _url;
+var _url;  // isto é uma variável global
 
+// esta função carrega os dados que irão alimentar a criação do HTML
 function loadConfigurationData() {
-
-
     $.getJSON(_url + "data.json", function (oData) {
         if (oData) {
             createHtml(oData);
@@ -14,6 +13,27 @@ function loadConfigurationData() {
     });
 }
 
+// esta funcao baralha os valores de um array
+// encontrei-a no stackoverflow aqui https://stackoverflow.com/questions/48659645/jquery-object-shuffle-randomize
+function baralhaOsValoresDesteArray(arr) {
+    var m = arr.length, t, i;
+
+    // While there remain elements to shuffle…
+    while (m) {
+        // Pick a remaining element…
+        i = Math.floor(Math.random() * m--);
+
+        // And swap it with the current element.
+        t = arr[m];
+        arr[m] = arr[i];
+        arr[i] = t;
+    }
+
+    return arr;
+};
+
+// obtem a URL de uma imagem de acordo com o seu "tipo"
+// por ex: "cover", etc
 function getImage(arr, sType) {
     if (arr && sType) {
         for (let i = 0; i < arr.length; i++) {
@@ -24,6 +44,8 @@ function getImage(arr, sType) {
     }
 }
 
+// obtem a URL de um video de acordo com o seu "tipo"
+// por ex: "youtube", "vimeo", etc
 function getLink(arr, aStype) {
     if (arr && aStype) {
         for (let i = 0; i < arr.length; i++) {
@@ -37,7 +59,23 @@ function getLink(arr, aStype) {
     }
 }
 
+// obtem uma data em formato JS
+// recebe data no formato YYYY-MM-DD
+function getDate(sDate) {
+    var oDate = new Date(sDate);
+    if (oDate instanceof Date && !isNaN(oDate)) {
+        return oDate;
+    } else {
+        return null;
+    }
+}
+
+// cria o HTML para cada entrada no array
 function createHtml(arr) {
+
+    arr = baralhaOsValoresDesteArray(arr);
+
+    // primeiro temos que apagar algum HTML anteriormente criado
     $("#al-generated-content").html("");
 
     var sHtml = "";
@@ -49,7 +87,7 @@ function createHtml(arr) {
             sHtml += "<p>" + oElement.id + "</p>";
             sHtml += "<p>" + oElement.title + "</p>";
             sHtml += "<p>" + oElement.description + "</p>";
-            sHtml += "<p>" + oElement.creationDate + "</p>";
+            sHtml += "<p>" + getDate(oElement.creationDate) + "</p>";
             if (sLink) {
                 sHtml += "<a href='" + sLink + "'>" + sLink + "</a>";
             }
@@ -63,7 +101,10 @@ function createHtml(arr) {
     $("#al-generated-content").html(sHtml);
 }
 
-function setGlobalURL(arr) {
+// é importante fazer o set da variável global _url
+// pois dependendo de onde estivermos a correr isto (localhost ou github)
+// a url será diferente
+function setGlobalURL() {
     _url = "";
     if (window.location.host === "squintas.github.io") {
         _url = window.location.origin + "/ArLiquido/mockupServer/"
@@ -72,6 +113,7 @@ function setGlobalURL(arr) {
     }
 }
 
+// é aqui que começa a festa assim que o "document" estiver "ready"
 $(document).ready(function () {
     setGlobalURL();
     loadConfigurationData();
