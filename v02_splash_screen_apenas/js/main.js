@@ -1,120 +1,136 @@
-var _url;  // isto é uma variável global
 
-// esta função carrega os dados que irão alimentar a criação do HTML
-function loadConfigurationData() {
-    $.getJSON(_url + "data.json", function (oData) {
-        if (oData) {
-            createHtml(oData);
-        } else {
-            throw "Error Loading data.json";
-        }
-    }).fail(function (oError) {
-        throw oError;
-    });
-}
+// // é aqui que começa a festa assim que o "document" estiver "ready"
+// $(document).ready(function () {
+//     setGlobalURL();
+//     loadConfigurationData();
+// });
 
-// esta funcao baralha os valores de um array
-// encontrei-a no stackoverflow aqui https://stackoverflow.com/questions/48659645/jquery-object-shuffle-randomize
-function baralhaOsValoresDesteArray(arr) {
-    var m = arr.length, t, i;
 
-    // While there remain elements to shuffle…
-    while (m) {
-        // Pick a remaining element…
-        i = Math.floor(Math.random() * m--);
+// =============================
 
-        // And swap it with the current element.
-        t = arr[m];
-        arr[m] = arr[i];
-        arr[i] = t;
+
+// import anime from 'animejs';
+
+class Scroll {
+    constructor(opts) {
+        this.opts = opts;
+        this.body = document.body;
+        this.html = document.documentElement;
+        this.scrollHeight = Math.max(this.body.scrollHeight, this.body.offsetHeight, this.html.clientHeight, this.html.scrollHeight, this.html.offsetHeight);
+        window.onscroll = this.scroll.bind(this);
     }
 
-    return arr;
+    static init(opts = {}) {
+        return new Scroll(opts);
+    }
+
+    scroll() {
+        this.scrollY = window.scrollY;
+        if (this.opts.progress) {
+            this.opts.progress(this.scrollY, this.scrollHeight);
+        }
+        this.tick();
+    }
+
+    tick() {
+        if (!this.isTicking) {
+            requestAnimationFrame(this.updateScroll.bind(this));
+        }
+        this.isTicking = true;
+    }
+
+    updateScroll() {
+        this.isTicking = false;
+    }
+}
+
+function isElementInViewport(element, intersect, nonIntersect) {
+    const opts = {
+        rootMargin: '0%'
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+            intersect(element, entry);
+        }
+        else {
+            nonIntersect(element, entry);
+        }
+    }, opts);
+    observer.observe(element);
+}
+
+class Parallax {
+    constructor(element) {
+        this.element = element;
+        this.ANIMATION_ATTR = 'data-parallax-animation';
+        this.SPEED_ATTR = 'data-parallax-speed';
+        this.DEFAULT_DURATION = 1500;
+        this.DEFAULT_SPEED_FACTOR = 1.5;
+        let initialized = false;
+        const animeConfig = {
+            targets: element,
+            easing: 'linear',
+            translateY: [-100, 0],
+            autoplay: false,
+            duration: this.DEFAULT_DURATION
+        };
+        this.animation = this.getAnimation();
+        this.speed = this.getSpeed();
+        if (this.animation.length) {
+            animeConfig.translateY = this.animation;
+        }
+        this.isAnimate = false;
+        this.anime = anime(animeConfig);
+        isElementInViewport(element, (el, entry) => {
+            this.windowHeight = window.innerHeight;
+            this.isAnimate = true;
+            this.requestAnimation();
+        }, (el, entry) => {
+            this.isAnimate = false;
+        });
+    }
+
+    static init(element) {
+        return new Parallax(element);
+    }
+
+    getSpeed() {
+        const speed = this.element.getAttribute(this.SPEED_ATTR);
+        return speed
+            ? Number(speed)
+            : this.DEFAULT_SPEED_FACTOR;
+    }
+
+    getAnimation() {
+        const animation = this.element.getAttribute(this.ANIMATION_ATTR);
+        return animation
+            ? animation
+                .split(',')
+                .map((n) => Number(n))
+            : [];
+    }
+
+    requestAnimation() {
+        const rect = this.element.getBoundingClientRect();
+        const top = rect.top;
+        const height = rect.height;
+        const scrolled = (top - this.windowHeight) * -1.5;
+        this.anime.seek(scrolled * 2);
+        if (this.isAnimate) {
+            this.requestAnimationId = requestAnimationFrame(this.requestAnimation.bind(this));
+        }
+    }
+    getScrollElementHeight() {
+        return 0;
+    }
+}
+document.onreadystatechange = () => {
+    if (document.readyState === 'complete') {
+        const elements = document.querySelectorAll('*[data-parallax]');
+        Array.from(elements).forEach((el) => {
+            Parallax.init(el);
+        });
+    }
 };
-
-// obtem a URL de uma imagem de acordo com o seu "tipo"
-// por ex: "cover", etc
-function getImage(arr, sType) {
-    if (arr && sType) {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i][sType]) {
-                return _url + "images/" + arr[i][sType];
-            }
-        }
-    }
-}
-
-// obtem a URL de um video de acordo com o seu "tipo"
-// por ex: "youtube", "vimeo", etc
-function getLink(arr, aStype) {
-    if (arr && aStype) {
-        for (let i = 0; i < arr.length; i++) {
-            for (let ii = 0; ii < aStype.length; ii++) {
-                if (arr[i][aStype[ii]]) {
-                    return arr[i][aStype[ii]];
-                }
-            }
-
-        }
-    }
-}
-
-// obtem uma data em formato JS
-// recebe data no formato YYYY-MM-DD
-function getDate(sDate) {
-    var oDate = new Date(sDate);
-    if (oDate instanceof Date && !isNaN(oDate)) {
-        return oDate;
-    } else {
-        return null;
-    }
-}
-
-// cria o HTML para cada entrada no array
-function createHtml(arr) {
-
-    arr = baralhaOsValoresDesteArray(arr);
-
-    // primeiro temos que apagar algum HTML anteriormente criado
-    $("#al-generated-content").html("");
-
-    var sHtml = "";
-    for (let i = 0; i < arr.length; i++) {
-        var oElement = arr[i];
-        if (oElement.enabled) {
-            var sLink = getLink(oElement.links, ["youtube", "vimeo", "spotify"]);
-            sHtml += "<div class='al-card'>";
-            sHtml += "<p>" + oElement.id + "</p>";
-            sHtml += "<p>" + oElement.title + "</p>";
-            sHtml += "<p>" + oElement.description + "</p>";
-            sHtml += "<p>" + getDate(oElement.creationDate) + "</p>";
-            if (sLink) {
-                sHtml += "<a href='" + sLink + "'>" + sLink + "</a>";
-            }
-            sHtml += "<p>" + oElement.format + "</p>";
-            sHtml += "<p>" + oElement.enabled + "</p>";
-            sHtml += "<img src='" + getImage(oElement.images, "cover") + "'</>";
-            sHtml += "</div>";
-        }
-    }
-
-    $("#al-generated-content").html(sHtml);
-}
-
-// é importante fazer o set da variável global _url
-// pois dependendo de onde estivermos a correr isto (localhost ou github)
-// a url será diferente
-function setGlobalURL() {
-    _url = "";
-    if (window.location.host === "squintas.github.io") {
-        _url = window.location.origin + "/ArLiquido/mockupServer/"
-    } else {
-        _url = window.location.origin + "/mockupServer/"
-    }
-}
-
-// é aqui que começa a festa assim que o "document" estiver "ready"
-$(document).ready(function () {
-    setGlobalURL();
-    loadConfigurationData();
-});

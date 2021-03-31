@@ -558,24 +558,6 @@
         "enabled": true
     },
     {
-        "id": "032",
-        "title": "o que faz falta na tv são mais filmes de foda!",
-        "description": "angolano Boavida não joga com o baralho todo",
-        "creationDate": "2010-04-10",
-        "images": [
-            {
-                "cover": "filmesdefoda.png"
-            }
-        ],
-        "links": [
-            {
-                "youtube": "https://www.youtube.com/watch?v=E3pRqxKR5fY"
-            }
-        ],
-        "format": 2,
-        "enabled": true
-    },
-    {
         "id": "033",
         "title": "Bomba em Vizela!",
         "description": "Fernando cuidado com a bomba, compra uma bomba 🤔😏🤣😂😂",
@@ -792,24 +774,6 @@
         "enabled": true
     },
     {
-        "id": "045",
-        "title": "Jovem angolano quando passa do BEGINNERS manja no inglês...Lol",
-        "description": "Vontade de falar inglês irmão paga faz um curso, kkk..",
-        "creationDate": "2014-11-06",
-        "images": [
-            {
-                "cover": "Jovemangolano.png"
-            }
-        ],
-        "links": [
-            {
-                "youtube": "https://www.youtube.com/watch?v=UY4r0ECZ-S8"
-            }
-        ],
-        "format": 3,
-        "enabled": true
-    },
-    {
         "id": "046",
         "title": "Amália Rodrigues 'Canção Do Mar'",
         "description": "Toda a imensa tristeza do Fado, toda a grandeza do Fado, toda a alma de Portugal, esse Portugal que vive e viverá na Língua de Luis Vaz de Camões e na voz de Amalia Rodrigues",
@@ -894,6 +858,24 @@
         "links": [
             {
                 "youtube": "https://www.youtube.com/watch?v=saN1BwlxJxA"
+            }
+        ],
+        "format": 1,
+        "enabled": true
+    },
+    {
+        "id": "051",
+        "title": "Holiday in Lourenco Marques",
+        "description": "Holiday in Lourenco Marques · Jao Tudella · Dan Hill",
+        "creationDate": "2015-09-01",
+        "images": [
+            {
+                "cover": "lourencomarques.png"
+            }
+        ],
+        "links": [
+            {
+                "youtube": "https://www.youtube.com/watch?v=jKPOkUNBdt0"
             }
         ],
         "format": 1,
