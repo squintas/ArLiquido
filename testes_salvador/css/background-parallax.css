@@ -1,0 +1,19 @@
+            body {
+                height: 3500px;
+                background: repeating-linear-gradient(140deg, #343434 2%, #343434 2%, #343434 4%, #383838 4%, #383838 6%);
+            }
+            
+            .header-container {
+                width: 100%;
+                height: 300px;
+                background-color: lightblue;
+                opacity: .3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+            }
+            
+            header h1 {
+                font-family: sans-serif;
+            }
