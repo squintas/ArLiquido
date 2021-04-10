@@ -15,24 +15,33 @@
         padding: 3rem;
         font-family: "Roboto", sans-serif;
       }
-      .container h2,
-      .container p {
+      .al-container h2,
+      .al-container p {
         margin: 0;
       }
 
-      .container div {
+      .al-container div {
         padding: 0.5rem;
         width: 100%;
       }
 
-      .container div:hover {
+      .al-container div:hover {
         background-color: #ddd;
       }
-      .container a {
+      .al-container a {
         text-decoration: none;
       }
-      .container p {
+      .al-container p {
         color: black;
+      }
+
+      .al-container .al-thumb-tall {
+        width: 100px;
+        border: 2px solid #666;
+      }
+      .al-container .al-thumb-landscape {
+        border: 2px solid #666;
+        width: 200px;
       }
     </style>
     <title>Ar Liquido</title>
@@ -41,23 +50,45 @@
   <body>
     <h1>Links para as várias versões</h1>
 
-    <div class="container">
+    <div class="al-container">
       <a href="testes_salvador/index.html">
         <div>
           <h2>testes_salvador</h2>
           <p>Isto são alguns testes feitos pelo Salvador</p>
+          <img
+            class="al-thumb-landscape"
+            src="testes_salvador/capa.png"
+            alt=""
+          />
         </div>
       </a>
       <a href="v01_teste_mockup_server/index.html">
         <div>
           <h2>v01_teste_mockup_server</h2>
           <p>Exemplo com 50+ elementos de mockup data</p>
+          <img
+            class="al-thumb-landscape"
+            src="v01_teste_mockup_server/capa.png"
+            alt=""
+          />
         </div>
       </a>
       <a href="v02_splash_screen_apenas/index.html">
         <div>
           <h2>v02_splash_screen_apenas</h2>
           <p>Primeiro ensaio de parallax com splash screen</p>
+          <img
+            class="al-thumb-landscape"
+            src="v02_splash_screen_apenas/capa.png"
+            alt=""
+          />
+        </div>
+      </a>
+      <a href="v04_proposta/index.html">
+        <div>
+          <h2>v04_proposta</h2>
+          <p>Proposta de 8/Abr</p>
+          <img class="al-thumb-tall" src="v04_proposta/capa.jpg" alt="" />
         </div>
       </a>
     </div>
