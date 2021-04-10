@@ -1,57 +1,60 @@
-/* body {
-  height: 300vh;
-} */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.al-splash {
+  max-width: 100%;
+}
 
-.al-background {
-  position: relative;
-  height: 150vh;
-  background-image: url("../media/pic.png");
-  background-repeat: repeat;
+.al-card {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  /* border: 1px solid #ddd; */
+  margin: 10px;
+  padding: 5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  height: 50px;
+  /* width: 250px; */
+}
+
+.al-card .al-group {
+  background-color: #000;
+  color: #fff;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
   overflow: hidden;
-}
-.al-background .al-logo {
-  position: absolute;
-  /* width: 20vh; */
-  /* height: 50px; */
-  padding: 5rem;
-  top: 40vh;
-  left: 40vw;
-  text-align: center;
-  /* margin-top: -25px;
-  margin-left: -25px; */
-  /* border-radius: 6px; */
-  background: #0ff;
+  height: 100%;
 }
 
-/* .al-background {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 200vh;
-  background-image: url("../media/pic.png");
-  background-repeat: repeat;
-  top: 0vh;
-  left: 0px;
-} */
+.al-card .al-content {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-/* .al-logo {
-  position: absolute;
-  display: block;
-  width: 100px;
-  height: 200px;
-  left: 50vw;
-  top: 180vh;
-  background-color: green;
-  left: 0px;
-} */
+.al-color-red {
+  background-color: #ff5b59;
+}
 
-/* .al-box-c {
-  position: absolute;
-  display: block;
-  width: 100px;
-  height: 200px;
-  left: 80px;
-  top: 180vh;
-  background-color: orange;
-  left: 0px;
-} */
+.al-color-green-dark {
+  background-color: #007354;
+}
+
+.al-color-green-light {
+  background-color: #40f700;
+}
+.al-color-blue {
+  background-color: #007aff;
+}
+
+.al-color-yellow {
+  background-color: #fef301;
+}
+
+.al-color-purple {
+  background-color: #f801d8;
+}
