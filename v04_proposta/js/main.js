@@ -97,11 +97,21 @@ tl.add({
     translateX: 50,
     // scale: anime.random(0.3, 1.7),
     // rotate: anime.random(-365, 365) + 'deg',
-    duration: 1000,
+    duration: 500,
     // duration: 3500, //anime.random(500, 5000),
     // direction: 'alternate',
     easing: "easeInOutSine"
-}, 0);
+}).add({
+    targets: oElement,
+    // translateX: anime.random(-500, 500) + '%',
+    translateX: 0,
+    // scale: anime.random(0.3, 1.7),
+    // rotate: anime.random(-365, 365) + 'deg',
+    duration: 500,
+    // duration: 3500, //anime.random(500, 5000),
+    // direction: 'alternate',
+    easing: "easeInOutSine"
+});
 // }
 
 // _.map(els, el => {
