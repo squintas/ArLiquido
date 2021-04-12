@@ -12,19 +12,21 @@
 
     <style>
       body {
-        padding: 3rem;
+        padding: 0.5rem;
         font-family: "Roboto", sans-serif;
       }
-      .al-container h2,
+      .al-container h3,
       .al-container p {
         margin: 0;
       }
 
+      .al-container hr {
+        border-top: 1px dashed #000;
+      }
       .al-container div {
         padding: 0.5rem;
-        width: 100%;
+        max-width: 100%;
       }
-
       .al-container div:hover {
         background-color: #ddd;
       }
@@ -48,12 +50,13 @@
   </head>
 
   <body>
-    <h1>Links para as várias versões</h1>
+    <h2>Links para as várias versões</h2>
 
     <div class="al-container">
+      <hr />
       <a href="testes_salvador/index.html">
         <div>
-          <h2>testes_salvador</h2>
+          <h3>testes_salvador</h3>
           <p>Isto são alguns testes feitos pelo Salvador</p>
           <img
             class="al-thumb-landscape"
@@ -62,9 +65,10 @@
           />
         </div>
       </a>
+      <hr />
       <a href="v01_mockup_server/index.html">
         <div>
-          <h2>v01_mockup_server</h2>
+          <h3>v01_mockup_server</h3>
           <p>
             Mockup Server com +50 elementos de mockup data. Isto será essencial
             para desenvolver futuras propostas com estes dados de teste.
@@ -76,9 +80,10 @@
           />
         </div>
       </a>
+      <hr />
       <a href="v02_splash_screen_apenas/index.html">
         <div>
-          <h2>v02_splash_screen_apenas</h2>
+          <h3>v02_splash_screen_apenas</h3>
           <p>Primeiro ensaio de parallax com splash screen</p>
           <img
             class="al-thumb-landscape"
@@ -87,13 +92,15 @@
           />
         </div>
       </a>
+      <hr />
       <a href="v04_proposta/index.html">
         <div>
-          <h2>v04_proposta</h2>
+          <h3>v04_proposta</h3>
           <p>Proposta de 8/Abr</p>
           <img class="al-thumb-tall" src="v04_proposta/capa.jpg" alt="" />
         </div>
       </a>
+      <hr />
     </div>
   </body>
 </html>
