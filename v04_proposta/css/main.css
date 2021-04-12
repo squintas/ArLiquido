@@ -47,25 +47,21 @@ body {
   border: 0px;
 }
 
-.al-color-red {
-  background-color: #ff5b59;
-}
-
-.al-color-green-dark {
-  background-color: #007354;
+.al-color-pink {
+  background-color: #ff21b3;
 }
 
 .al-color-green-light {
-  background-color: #40f700;
+  background-color: #00ff00;
 }
 .al-color-blue {
-  background-color: #007aff;
+  background-color: #0062f9;
 }
 
 .al-color-yellow {
-  background-color: #fef301;
+  background-color: #fff200;
 }
 
-.al-color-purple {
-  background-color: #f801d8;
+.al-color-brown {
+  background-color: #dba621;
 }
