@@ -1,0 +1,133 @@
+body {
+    font-family: 'Catamaran', sans-serif;
+    margin-left: 0;
+    min-height: 2500px;
+}
+
+header img {
+    max-width: 450px;
+    margin-top: 80px;
+}
+
+header h1 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 40px 0;
+}
+
+main {
+    background-color: #FFF101;
+    padding: 20px 0;
+}
+
+main a {
+    background-color: #FFF101;
+    text-decoration: none;
+}
+
+main p {
+    font-size: 34px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 11px 9px;
+    font-weight: bold;
+}
+
+main span {
+    color: #fff;
+}
+
+main section {
+    max-width: 365px;
+    height: 85px;
+    background-color: lightblue;
+    text-align: center;
+    margin-left: 15px;
+}
+
+main .kaija-saariaho {
+    margin-top: 200px;
+    max-width: 365px;
+    max-height: 85px;
+    background-color: #40F700;
+}
+
+main .kaija-saariaho p {
+    color: white;
+    /* padding: 10px 9px; */
+}
+
+main .step-right-up {
+    max-width: 365px;
+    height: 85px;
+    background-color: #0062F9;
+}
+
+main .step-right-up p {
+    font-size: 37px;
+}
+
+main .box-of-darkness {
+    max-width: 365px;
+    height: 85px;
+    background-color: #0062F9;
+    color: white;
+}
+
+main .box-of-darkness p {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+main .noa {
+    max-width: 365px;
+    height: 85px;
+    background-color: #0062F9;
+}
+
+main .noa p {
+    font-size: 37px;
+}
+
+main .detox {
+    max-width: 365px;
+    height: 85px;
+    background-color: #40F700;
+}
+
+main .detox p {
+    font-size: 37px;
+}
+
+main .a-love-supreme {
+    max-width: 365px;
+    height: 85px;
+    background-color: #F700D7;
+}
+
+main .saga-cega {
+    max-width: 365px;
+    height: 85px;
+    background-color: #40F700;
+}
+
+main .saga-cega p {
+    font-size: 37px;
+}
+
+main .joana-gama {
+    max-width: 365px;
+    height: 85px;
+    background-color: #F700D7;
+}
+
+main .joana-gama p {
+    font-size: 50px;
+}
+
+main .ricardo-toscano {
+    max-width: 365px;
+    height: 85px;
+    background-color: #0062F9;
+}

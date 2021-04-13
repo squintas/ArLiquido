@@ -3,13 +3,13 @@ var _url;
 function loadConfigurationData() {
 
 
-    $.getJSON(_url + "data.json", function (oData) {
+    $.getJSON(_url + "data.json", function(oData) {
         if (oData) {
             createHtml(oData);
         } else {
             throw "Error Loading data.json";
         }
-    }).fail(function (oError) {
+    }).fail(function(oError) {
         throw oError;
     });
 }
@@ -72,7 +72,7 @@ function setGlobalURL(arr) {
     }
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     setGlobalURL();
     loadConfigurationData();
 });
