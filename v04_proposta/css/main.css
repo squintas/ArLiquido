@@ -1,16 +1,13 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
 }
+
 .al-splash {
   max-width: 100%;
 }
 
 .al-card {
+  font-family: "Catamaran", sans-serif;
   display: flex;
   align-items: center;
   max-width: 100%;

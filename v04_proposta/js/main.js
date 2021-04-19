@@ -30,24 +30,21 @@ var _speedMarker2;
 
 function getColisionPercentage(oElement) {
     oElement = $(oElement);
-    var x1 = oElement.offset().left;
-    var y1 = oElement.offset().top;
-    var h1 = oElement.outerHeight(false);
-    var w1 = oElement.outerWidth(true);
-    var b1 = y1 + h1;
-    var r1 = x1 + w1;
-    var x2 = _oLogo.offset().left;
-    var y2 = _oLogo.offset().top;
-    var h2 = _oLogo.outerHeight(false);
-    var w2 = _oLogo.outerWidth(true);
-    var b2 = y2 + h2;
-    var r2 = x2 + w2;
+    var oElementTOP = oElement.offset().top;
+    var oElementHEIGHT = oElement.outerHeight(false);
+    var oElementTOTAL = oElementTOP + oElementHEIGHT;
+    var oLogoTOP = _oLogo.offset().top;
+    var oLogoHEIGHT = _oLogo.outerHeight(false);
+    var oLogoTOTAL = oLogoTOP + oLogoHEIGHT;
 
-    if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) {
+    console.log("_oLogo: " + oLogoTOP, oLogoHEIGHT + "    oElement: " + oElementTOP, oElementHEIGHT);
+
+    if (oElementTOTAL < oLogoTOP || oElementTOP > oLogoTOTAL) {
         return false;
     } else {
-        var iPercent = y1 + h1 - y2 + h2;
-        iPercent = (100 - (iPercent * 100 / h1)).toFixed(2);
+        var iPercent = oElementTOP + oElementHEIGHT - oLogoTOP + oLogoHEIGHT;
+        console.log("iPercent: " + iPercent);
+        iPercent = (100 - (iPercent * 100 / oElementHEIGHT)).toFixed(2);
         return iPercent;
     }
 }
@@ -73,7 +70,8 @@ function initializeAnimationForAllCards() {
 
         var obj = {
             anime: oTimeLine,
-            card: $(oCard)
+            card: $(oCard),
+            percent: 0
         }
 
         _aCards.push(obj);
@@ -84,8 +82,7 @@ function scrollSpeedIsHigh() {
     _speedMarker1 = _speedMarker2 || 0;
     _speedMarker2 = $(window).scrollTop();
     var dif = Math.abs(_speedMarker1 - _speedMarker2);
-    console.log(dif);
-    if (dif > 15) {
+    if (dif > 10) {
         return true;
     } else {
         return false;
@@ -93,11 +90,11 @@ function scrollSpeedIsHigh() {
 }
 
 function animateCard() {
-    var iPercent;
+    // var iPercent;
     for (let i = 0; i < _aCards.length; i++) {
         var oCard = _aCards[i];
-        if (iPercent = getColisionPercentage(oCard.card)) {
-            oCard.anime.seek(iPercent * 10);
+        if (oCard.percent = getColisionPercentage(oCard.card)) {
+            oCard.anime.seek(oCard.percent * 10);
             break;
         }
     }
